@@ -154,4 +154,5 @@
 
   <project path="device/acer/a500" name="PlayOSS-Dev/android_device_acer_a500" remote="gh" revision="cm10.1" />
   <project path="kernel/acer/a500" name="PlayOSS-Dev/kernel_acer_a500" remote="gh" revision="jellybean4.2" />
+  <project path="vendor/acer/a500" name="PlayOSS-Dev/vendor_acer_a500" remote="gh" revision="jellybean4.2" />
 </manifest>
