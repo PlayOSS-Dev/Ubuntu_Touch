@@ -16,7 +16,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="CyanogenMod/android" />
+  <project path="android" name="PlayOSS-Dev/android" remote="gh" revision="master" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" />
   <project path="bionic" name="CyanogenMod/android_bionic" />
@@ -155,4 +155,13 @@
   <project path="device/acer/a500" name="PlayOSS-Dev/android_device_acer_a500" remote="gh" revision="cm10.1" />
   <project path="kernel/acer/a500" name="PlayOSS-Dev/kernel_acer_a500" remote="gh" revision="jellybean4.2" />
   <project path="vendor/acer/a500" name="PlayOSS-Dev/vendor_acer_a500" remote="gh" revision="jellybean4.2" />
+  <project path="device/samsung/maguro" name="CyanogenMod/android_device_samsung_maguro" />
+  <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" />
+  <project path="kernel/samsung/tuna" name="CyanogenMod/android_kernel_samsung_tuna" />
+  <project path="device/samsung/manta" name="CyanogenMod/android_device_samsung_manta" />
+  <project path="kernel/samsung/manta" name="CyanogenMod/android_kernel_samsung_manta" />
+  <project path="device/lge/mako" name="CyanogenMod/android_device_lge_mako" />
+  <project path="kernel/lge/mako" name="CyanogenMod/lge-kernel-mako" />
+  <project path="device/asus/grouper" name="CyanogenMod/android_device_asus_grouper" />
+  <project path="kernel/asus/grouper" name="CyanogenMod/android_kernel_asus_grouper" />
 </manifest>
