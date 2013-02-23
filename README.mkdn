@@ -1,5 +1,5 @@
-Ubuntu Phablet (Android Part)
-=============================
+Ubuntu Phablet port to Acer Picasso (Android Part)
+======================================================
 
 Submitting Patches
 ------------------
@@ -15,7 +15,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the Ubuntu Phablet trees, use a command like this:
 
-    repo init -u git://phablet.ubuntu.com/git/CyanogenMod/android.git -b phablet-10.1
+    repo init -u git://github.com/PlayOSS-Dev/ubuntu_phablet-10.1.git
 
 Then to sync up:
 
