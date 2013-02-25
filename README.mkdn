@@ -7,10 +7,10 @@ To get started with Ubuntu Phablet Android build, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 ------------
 
-# How to build
-# Set up  development environment
+### How to build
+#### Set up  development environment
 
-# Setup the Touch Developer Preview Tools PPA
+#### Setup the Touch Developer Preview Tools PPA
 
    $ sudo add-apt-repository ppa:phablet-team/tools
 
@@ -18,7 +18,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
    $ sudo apt-get install phablet-tools android-tools-adb android-tools-fastboot
 
-# Install Build package
+#### Install Build package
 
    $ sudo apt-get install git gnupg flex bison gperf build-essential \
      zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -26,7 +26,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
      libgl1-mesa-dev g++-multilib mingw32 tofrodos \
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool
 
-# Download the Source Tree
+#### Download the Source Tree
  
    $ mkdir ~/bin
 
@@ -44,7 +44,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
    $ phablet-dev-bootstrap -c Ubuntu_Touch
 
-# Download my device config & kernel source code for ubuntu_touch
+#### Download my device config & kernel source code for ubuntu_touch
 
    $ cd Ubuntu_Touch
 
@@ -54,7 +54,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
    $ git clone git://github.com/PlayOSS-Dev/vendor_acer_a500.git -b jellybean4.2 vendor/acer/a500
 
-# Building
+#### Building
  
    $ source build/envsetup.sh
   
