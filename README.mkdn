@@ -1,24 +1,43 @@
 Ubuntu Phablet port to Acer Picasso (Android Part)
 ======================================================
 
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via the Ubuntu Phone mailing list (ubuntu-phone@lists.launchpad.net).
-
-You can find more information about the mailing list and the Launchpad ubuntu-phone team at https://launchpad.net/~ubuntu-phone.
-
 Getting Started
 ---------------
 
 To get started with Ubuntu Phablet Android build, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository using the Ubuntu Phablet trees, use a command like this:
+------------
+How to build
 
-    repo init -u git://github.com/PlayOSS-Dev/ubuntu_phablet-10.1.git
+Set up  development environment
 
-Then to sync up:
+1. Setup the Touch Developer Preview Tools PPA
 
-    repo sync
+$ sudo add-apt-repository ppa:phablet-team/tools
+$ sudo apt-get update
+$ sudo apt-get install phablet-tools android-tools-adb android-tools-fastboot
+
+2. Install Build package
+
+$ sudo apt-get install git gnupg flex bison gperf build-essential \
+  zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+  libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+  libgl1-mesa-dev g++-multilib mingw32 tofrodos \
+  python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool
+
+3. Download the Source Tree
+ 
+$ mkdir ~/bin
+$ PATH=~/bin:$PATH
+$ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+$ mkdir Ubuntu_Touch
+
+$ phablet-dev-bootstrap Ubuntu_Touch
+
+or
+
+$ phablet-dev-bootstrap -c Ubuntu_Touch
 
 Please see the (http://wiki.ubuntu.com/) for building instructions.
