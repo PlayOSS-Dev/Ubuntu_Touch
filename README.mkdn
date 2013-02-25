@@ -15,7 +15,9 @@ Set up  development environment
 1. Setup the Touch Developer Preview Tools PPA
 
 $ sudo add-apt-repository ppa:phablet-team/tools
+
 $ sudo apt-get update
+
 $ sudo apt-get install phablet-tools android-tools-adb android-tools-fastboot
 
 2. Install Build package
@@ -29,9 +31,13 @@ $ sudo apt-get install git gnupg flex bison gperf build-essential \
 3. Download the Source Tree
  
 $ mkdir ~/bin
+
 $ PATH=~/bin:$PATH
+
 $ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+
 $ chmod a+x ~/bin/repo
+
 $ mkdir Ubuntu_Touch
 
 $ phablet-dev-bootstrap Ubuntu_Touch
