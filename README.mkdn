@@ -3,12 +3,6 @@ Ubuntu Phablet port to Acer Picasso (Android Part)
 
 Getting Started
 ---------------
-To get started with Ubuntu Phablet Android build, you'll need to get
-familiar with [Git and Repo](http://source.android.com/download/using-repo).
-------------
-
-### How to build
-#### Set up  development environment
 
 #### Setup the Touch Developer Preview Tools PPA
 
@@ -20,11 +14,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 #### Install Build package
 
-   $ sudo apt-get install git gnupg flex bison gperf build-essential \
-     zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
-     libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
-     libgl1-mesa-dev g++-multilib mingw32 tofrodos \
-     python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool
+   $ sudo apt-get install git gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool
 
 #### Download the Source Tree
  
